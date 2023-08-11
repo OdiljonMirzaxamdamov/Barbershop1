@@ -2,9 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="keywords" content="парикмахерская, барбершоп">
+    <title>Барбершоп "Бородинский"</title>
+    <link rel="stylesheet" href="Stylesheet.css">
 </head>
 <body>
+  <header class="main-header">
+      <nav class="main-navigation">
+          <a class="main-header-logo">
+          <img alt="Логотип барбершопа 'Бородинского'" height="153" src="svg/index-logo.svg" width="368">
+          </a>
+          <ul class="site-navigation">
+              <li><a href="info.html">Информация</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="price.html">Прайс-лист</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+              <li class="login-link">Вход</li>
+          </ul>
+      </nav>
+  </header>
+  <main class="container">
+      <h1 class="visual-hidden">Барбершоп "Бородинский"</h1>
 
+      <section class="features">
+        <h2 class="visual-hidden">Основные премиущества</h2>
+        <ul class="features-list">
+            <li class="feature-item">
+                <h3>Быстро</h3>
+                <p>Мы делаем свою работу быстро!</p>
+            </li>
+            <li class="feature-item">
+                <h3>Круто</h3>
+                <p>Забудьте как вы стриглись раньше</p>
+            </li>
+            <li class="feature-item">
+                <h3>Дорого</h3>
+                <p>Наши мастера профессионалы своего дела</p>
+            </li>
+        </ul>
+    </section>
+
+      <section class="news">
+          <h2>Новости</h2>
+          <ul class="news-list">
+              <li class="news-item">
+                  <p>Нам наконец привезли ягермайстер!</p>
+                  <time datetime="2023-08-11">11-Августа</time>
+              </li>
+              <li class="news-item">
+                  <p>В нашей команде пополнение</p>
+                  <time datetime="2023-08-10">10-Августа</time>
+              </li>
+          </ul>
+          <a class="bottom" href="news.html">Все новости</a>
+      </section>
+
+      <section class="gallery">
+          <h2>Галлерея</h2>
+          <figure class="gallery-content">
+              <img src="jpg/index-gallery-photo.jpg" height="164" width="286" alt="Студия">
+          </figure>
+          <span class="button gallery-button gallery-button-back">Назад</span>
+          <span class="button gallery-button gallery-button-next">Вперед</span>
+      </section>
+
+  </main>
 </body>
+
 </html>
