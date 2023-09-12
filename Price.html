@@ -9,22 +9,27 @@
     <link rel="stylesheet" href="Stylesheet.css">
 </head>
 
-<body>
-<header class="main-header">
-  <nav class="main-navigation">
-    <a class="main-header-logo" href="Index.html">
-      <img src="svg/logo.svg" width="111" height="24" alt="Логотип барбершопа 'Бородинского'">
-    </a>
-    <ul class="site-navigation">
-      <li><a href="info.html">Информация</a></li>
-      <li><a href="news.html">Новости</a></li>
-      <li class="site-navigation-current"><a href="Price.html.">Прайс-лист</a></li>
-      <li><a href="Catalog.html">Магазин</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-    <ul class="user-navigation">
-      <a class="login-link" href="login.html">Вход</a>
-    </ul>
+<body class="inner-page">
+
+<div class="container">
+
+<header class="main-header-inner">
+  <nav class="main-navigation-inner">
+    <div class="main-navigation-wrapper-inner">
+      <a class="main-header-logo-inner" href="Index.html">
+        <img src="svg/logo.svg" width="111" height="24" alt="Логотип барбершопа 'Бородинского'">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li class="site-navigation-current"><a href="Price.html.">Прайс-лист</a></li>
+        <li><a href="Catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <a class="login-link" href="login.html">Вход</a>
+      </ul>
+    </div>
   </nav>
 </header>
 
@@ -32,8 +37,8 @@
   <h1 class="page-title">Прайс-лист</h1>
 
   <ul class="breadcrumbs">
-    <li><a href="Index.html">Главное</a></li>
-    <li class="breadcrumbs-current">Прайс-лист</li>
+    <li class="breadcrumbs-item"><a href="Index.html">Главное</a></li>
+    <li class="breadcrumbs-item breadcrumbs-current">Прайс-лист</li>
   </ul>
 
   <article>Истинно мужская классика</article>
@@ -62,24 +67,26 @@
   </section>
 
   <footer class="main-footer">
-    <p class="footer-contacts">
-      Барбершоп "Бородинский"<br>
-      Адрес: Санкт петербург, ул. конюшенная <br>
-      <a href="map.html">Как найти нас</a><br>
-      тел: 0799919991999
-    </p>
-    <div class="footer-social">
-      <b>Давайте дружить</b>
-      <ul>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграмм</a></li>
-      </ul>
+    <div class="footer-container">
+      <p class="footer-contacts">
+        Барбершоп "Бородинский"<br>
+        Адрес: Санкт петербург, ул. конюшенная <br>
+        <a href="map.html">Как найти нас</a><br>
+        тел: 0799919991999
+      </p>
+      <div class="footer-social">
+        <b>Давайте дружить</b>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграмм</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>Разработано:</b>
+        <a class="button" href="http://htmlacademy.ru">HTML Academy</a>
+      </p>
     </div>
-    <p class="footer-copyright">
-      <b>Разработано:</b>
-      <a class="button" href="http://htmlacademy.ru">HTML Academy</a>
-    </p>
   </footer> <!--Футер-->
 
   <section class="modal modal-login">
@@ -88,16 +95,16 @@
 
     <form class="login-form" action="http://echo.htmlacademy.ru" method="post">
       <p>
-        <label class="visual-hidden" for="user-login">Логин</label>
+        <label class="visually-hidden" for="user-login">Логин</label>
         <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
       </p>
       <p>
-        <label class="visual-hidden" for="user-password">Пароль</label>
+        <label class="visually-hidden-hidden" for="user-password">Пароль</label>
         <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
       </p>
       <p class="login-password-info">
         <label class="login-checkbox">
-          <input type="checkbox" name="remember" class="visual-hidden">
+          <input type="checkbox" name="remember" class="visually-hidden-hidden">
           <span class="checkbox-indicator"></span>
           Запомните меня
         </label>
@@ -109,5 +116,6 @@
   </section> <!--Личный кабинет-->
 
 </main>
+</div>
 </body>
 </html>

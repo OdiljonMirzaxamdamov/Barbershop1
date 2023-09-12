@@ -10,21 +10,26 @@
 </head>
 
 <body class="inner-page">
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="Index.html">
-        <img src="svg/logo.svg" width="111" height="24" alt="Логотип барбершопа 'Бородинского'">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="price.html">Прайс-лист</a></li>
-        <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <a class="login-link" href="login.html">Вход</a>
-      </ul>
+
+<div class="container">
+
+  <header class="main-header-inner">
+    <nav class="main-navigation-inner">
+      <div class="main-navigation-wrapper-inner">
+        <a class="main-header-logo-inner" href="Index.html">
+          <img src="svg/logo.svg" width="111" height="24" alt="Логотип барбершопа 'Бородинского'">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="price.html">Прайс-лист</a></li>
+          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <a class="login-link" href="login.html">Вход</a>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -32,44 +37,46 @@
   <h1 class="page-title">Средства для ухода</h1>
 
   <ul class="breadcrumbs">
-    <li><a href="Index.html">Главное</a></li>
-    <li><a href="Catalog.html">Магазин</a></li>
-    <li class="breadcrumbs-current">Средства для ухода</li>
+    <li class="breadcrumbs-item"><a href="Index.html">Главное</a></libreadcrumbs-item></li>
+    <li class="breadcrumbs-item"><a href="Catalog.html">Магазин</a></li>
+    <li class="breadcrumbs-item breadcrumbs-current">Средства для ухода</li>
   </ul>
 
-  <section class="filters">
-    <h2 class="visual-hidden">Фильтр товаров</h2>
+  <div class="catalog-columns">
+
+    <section class="filters">
+    <h2 class="visually-hidden">Фильтр товаров</h2>
     <form class="filter" method="get" action="http://echo.htmlacademy.ru">
       <fieldset class="manufacturers">
         <legend>Производители</legend>
         <ul>
           <li class="filter-option">
-            <input class="visual-hidden filter-input filter-input-checkbox"  type="checkbox"
+            <input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox"
             name="baxter-of-california" id="filter-baxter-of-california" checked>
             <label for="filter-baxter-of-california">Baxter of california</label>
           </li>
           <li class="filter-option">
-            <input class="visual-hidden filter-input filter-input-checkbox"  type="checkbox"
+            <input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox"
                    name="mp-natty" id="filter-mp-natty">
             <label for="filter-mp-natty">Mp natty</label>
           </li>
           <li class="filter-option">
-            <input class="visual-hidden filter-input filter-input-checkbox"  type="checkbox"
+            <input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox"
                    name="suavecito" id="filter-suavecito" checked>
             <label for="filter-suavecito">Suavecito</label>
           </li>
           <li class="filter-option">
-            <input class="visual-hidden filter-input filter-input-checkbox"  type="checkbox"
+            <input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox"
                    name="malin-goatze" id="filter-malin-goatze">
             <label for="filter-malin-goatze">Malin+Goatze</label>
           </li>
           <li class="filter-option">
-            <input class="visual-hidden filter-input filter-input-checkbox"  type="checkbox"
+            <input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox"
                    name="murrays" id="filter-murrays" disabled>
             <label for="filter-murrays">Murray's</label>
           </li>
           <li class="filter-option">
-            <input class="visual-hidden filter-input filter-input-checkbox"  type="checkbox"
+            <input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox"
                    name="american-crew" id="filter-american-crew" checked>
             <label for="filter-american-crew">American crew</label>
           </li>
@@ -80,17 +87,17 @@
         <legend>Группы товаров</legend>
         <ul>
           <li class="filter-option">
-            <input class="visual-hidden filter-input filter-input-radio"  type="radio"
+            <input class="visually-hidden filter-input filter-input-radio"  type="radio"
                    name="product-group" value="shaving" id="filter-shave">
             <label for="filter-shave">Бритвенные принадлежности</label>
           </li>
           <li class="filter-option">
-            <input class="visual-hidden filter-input filter-input-radio"  type="radio"
+            <input class="visually-hidden filter-input filter-input-radio"  type="radio"
                    name="product-group" value="hair-care" id="filter-care" checked>
             <label for="filter-care">Средства для ухода</label>
           </li>
           <li class="filter-option">
-            <input class="visual-hidden filter-input filter-input-radio"  type="radio"
+            <input class="visually-hidden filter-input filter-input-radio"  type="radio"
                    name="product-group" value="accessories" id="filter-accessories">
             <label for="filter-accessories">Аксессуары</label>
           </li>
@@ -100,8 +107,8 @@
     </form>
   </section>
 
-  <section class="catalog">
-    <h2 class="visual-hidden">Список средств для ухода</h2>
+    <section class="catalog">
+    <h2 class="visually-hidden">Список средств для ухода</h2>
 
     <ul class="catalog-list">
       <li class="catalog-item">
@@ -210,25 +217,29 @@
     </ul>
   </section>
 
+  </div>
+
   <footer class="main-footer">
-    <p class="footer-contacts">
-      Барбершоп "Бородинский"<br>
-      Адрес: Санкт петербург, ул. конюшенная <br>
-      <a href="map.html">Как найти нас</a><br>
-      тел: 0799919991999
-    </p>
-    <div class="footer-social">
-      <b>Давайте дружить</b>
-      <ul>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграмм</a></li>
-      </ul>
+    <div class="footer-container">
+      <p class="footer-contacts">
+        Барбершоп "Бородинский"<br>
+        Адрес: Санкт петербург, ул. конюшенная <br>
+        <a href="map.html">Как найти нас</a><br>
+        тел: 0799919991999
+      </p>
+      <div class="footer-social">
+        <b>Давайте дружить</b>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграмм</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>Разработано:</b>
+        <a class="button" href="http://htmlacademy.ru">HTML Academy</a>
+      </p>
     </div>
-    <p class="footer-copyright">
-      <b>Разработано:</b>
-      <a class="button" href="http://htmlacademy.ru">HTML Academy</a>
-    </p>
   </footer> <!--Футер-->
 
   <section class="modal modal-login">
@@ -237,16 +248,16 @@
 
     <form class="login-form" action="http://echo.htmlacademy.ru" method="post">
       <p>
-        <label class="visual-hidden" for="user-login">Логин</label>
+        <label class="visually-hidden-hidden" for="user-login">Логин</label>
         <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
       </p>
       <p>
-        <label class="visual-hidden" for="user-password">Пароль</label>
+        <label class="visually-hidden-hidden" for="user-password">Пароль</label>
         <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
       </p>
       <p class="login-password-info">
         <label class="login-checkbox">
-          <input type="checkbox" name="remember" class="visual-hidden">
+          <input type="checkbox" name="remember" class="visually-hidden-hidden">
           <span class="checkbox-indicator"></span>
           Запомните меня
         </label>
@@ -258,5 +269,6 @@
   </section> <!--Личный кабинет-->
 
 </main>
+</div>
 </body>
 </html>
